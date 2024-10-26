@@ -16,8 +16,8 @@ Two maps where you should have a Top-5 destinations and a Top-20 hotels in the a
         "Eguisheim", "Besancon", "Dijon", "Annecy", "Grenoble", "Lyon", "Gorges du Verdon", 
         "Bormes les Mimosas", "Cassis", "Marseille", "Aix en Provence", "Avignon", "Uzes", 
         "Nîmes", "Aigues Mortes", "Les Saintes-Maries-de-la-Mer", "Collioure", "Carcassonne", 
-        "Ariege", "Toulouse", "Montauban", "Biarritz", "Bayonne", "La Rochelle"
-    ]
+        "Ariege", "Toulouse", "Montauban", "Biarritz", "Bayonne", "La Rochelle"]
+    
  - The .csv file was created by collecting data from Booking website and Open Weather API (https://openweathermap.org/appid) through scraping and .get requests
       - The scraping script 'scrapy3.py' is also shared in this repository.
       - The notebook 'projet_kayak.ipynb' shows:
