@@ -20,6 +20,7 @@ Two maps where you should have a Top-5 destinations and a Top-20 hotels in the a
     
  - The .csv file was created by collecting data from Booking website and Open Weather API (https://openweathermap.org/appid) through scraping and .get requests
       - The scraping script 'scrapy3.py' is also shared in this repository.
+      - the file booking5.json gathers the data collected from Booking website through Scrapy.
       - The notebook 'projet_kayak.ipynb' shows:
           - how all the .get requests were done to collect the cities coordinates and weather,
           - how the corresponding Pandas DataFrames were created and merged with the data collected with Scrapy from Booking.
