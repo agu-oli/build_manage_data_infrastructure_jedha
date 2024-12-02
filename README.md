@@ -27,7 +27,7 @@ Two maps where you should have a Top-5 destinations and a Top-20 hotels in the a
 
 - the .csv file (df_final_kayak_project.csv) is availables in the following s3 bucket: s3://projet-kayak-jedha/df_final_kayak_project.csv
 
-- A SQL Database where it is possible to query the clean data present in the s3 bucket mentioned above at the following endpoint: jedha-db-adei.clcggo264zgf.eu-west-3.rds.amazonaws.com
+- A SQL Database where it is possible to query the clean data present in the s3 bucket mentioned above at the following endpoint
 
   - the SQL database was created on python in notebook projet_kayak_sql_db.ipynb uploaded in this repository.
  
