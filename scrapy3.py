@@ -16,7 +16,6 @@ class BookingSpider(scrapy.Spider):
         "Nîmes", "Aigues Mortes", "Les Saintes-Maries-de-la-Mer", "Collioure", "Carcassonne", 
         "Ariege", "Toulouse", "Montauban", "Biarritz", "Bayonne", "La Rochelle"
     ]
-    #"Saintes Maries de la mer"
     
     def start_requests(self):
         for city in self.cities:
@@ -53,9 +52,6 @@ class BookingSpider(scrapy.Spider):
     
         lat_lon = response.xpath('//*[@id="hotel_address"]').attrib['data-atlas-latlng']
 
-
-        #//*[@id="hotel_sidebar_static_map_capla"]
-
         # Scrape description
         description = response.xpath('//*[@id="basiclayout"]/div[1]/div[2]/div/div/div[1]/div[1]/div[1]/div/div/p[1]/text()').get()
 
@@ -67,26 +63,6 @@ class BookingSpider(scrapy.Spider):
             'coordinates': lat_lon,
             'description': description
         }
-
-
-    """def parse_hotel_details(self, response, city, hotel_name, note):
-        # Extract coordinates (latitude and longitude)
-        lat = response.xpath('//meta[@property="og:latitude"]/@content').get()
-        lon = response.xpath('//meta[@property="og:longitude"]/@content').get()
-        
-        # Extract description
-        description = response.xpath('//meta[@name="description"]/@content').get()
-
-        yield {
-            'city': city,
-            'hotel': hotel_name,
-            'url': response.url,
-            'note': note,
-            'coordinates': lat + lon,
-            'description': description
-        }"""
-
-# To run the spider, you can use: scrapy crawl booking
 
 filename = 'booking5.json'
 
